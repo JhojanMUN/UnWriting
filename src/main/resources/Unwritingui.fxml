@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unwriting.ui.UiControler">
+   <Label fx:id="LabelTitulo" alignment="CENTER" layoutX="98.0" layoutY="13.0" prefHeight="35.0" prefWidth="405.0" text="UnWriting" textFill="#abcd13">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="LabelLevel" alignment="CENTER" layoutX="38.0" layoutY="31.0" prefHeight="35.0" prefWidth="62.0" text="Nivel 0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="LabelTimer" alignment="CENTER" layoutX="501.0" layoutY="36.0" prefHeight="25.0" prefWidth="62.0" text="00:00">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="LabelFrase" alignment="CENTER" layoutX="6.0" layoutY="166.0" prefHeight="34.0" prefWidth="582.0" text="Frase">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </Label>
+   <TextField fx:id="textFieldEntrada" layoutX="203.0" layoutY="213.0" prefHeight="25.0" prefWidth="196.0" promptText="Write Word Fast" />
+   <Button fx:id="btnPushme" layoutX="262.0" layoutY="253.0" mnemonicParsing="false" onAction="#onPushmeClick" prefHeight="25.0" prefWidth="79.0" text="Push me" />
+   <Label fx:id="labelMensaje" alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="17.0" layoutY="295.0" prefHeight="89.0" prefWidth="567.0" text="Mensaje">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <ImageView fx:id="Ima1" fitHeight="79.0" fitWidth="79.0" layoutX="69.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@Imagenes/Moono.png" />
+   </ImageView>
+   <ImageView fx:id="Ima2" fitHeight="79.0" fitWidth="79.0" layoutX="183.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@Imagenes/sun1.png" />
+   </ImageView>
+   <ImageView fx:id="Ima3" fitHeight="79.0" fitWidth="79.0" layoutX="341.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@Imagenes/Psun1.png" />
+   </ImageView>
+   <ImageView fx:id="Ima4" fitHeight="79.0" fitWidth="79.0" layoutX="462.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@Imagenes/Moono.png" />
+   </ImageView>
+</AnchorPane>
