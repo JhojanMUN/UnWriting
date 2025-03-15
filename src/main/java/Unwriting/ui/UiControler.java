@@ -16,7 +16,7 @@ import javafx.util.Duration;
 /**
  * Class Principal del control de la interfaz. animaciones y eventos realizados por el usuario
  * @author Jhojan Moreno
- * @version 1.0
+ * @version 1.1
  */
 public class UiControler {
     public AnchorPane MainController;
@@ -26,7 +26,19 @@ public class UiControler {
     int nivel = 1;
     int progrestimer = 0;
     int tp = 0;
-    String[] n1 = {"a", "b", "123456789","Hola","Pajaro","Contenedor","Java","Altavoz","Union","Murcielago","Avispa","Insectos","Malestar","Pantalone","Doctor Purgon","Interpersonalidades","Fpoe","Algebra Lineal","Alcancia","Yesterday","Love is war","Daoko","Interlocutor","Llorando por lluvia","Pasaporte","Luchela con Elias manito","Hello World", "repta" , "circular"};
+    String[] n1 = {"a", "b", "123456789","Hola","Pajaro","Contenedor",
+            "Java","Altavoz","Union","Murcielago","Avispa","Insectos",
+            "Malestar","Pantalone","Doctor Purgon","Interpersonalidades",
+            "Fpoe","Algebra Lineal","Alcancia","Yesterday","Love is war",
+            "Daoko","Interlocutor","Llorando por lluvia","Pasaporte",
+            "Luchela con Elias manito","Hello World", "Repta" , "Circular",
+            "Commits", "Lego 40k warhammer","Programmer", "Japon",
+            "Esternocleidomastoideo", "Parangaricutirimicuaro,", "911 Burguers and fries",
+            "LG tv + 4k 60hz", "Tortuga", "Stay with me", "Re Starting a life from zero",
+            "Mi conquista tiene una lista", "Perola", "Memorias de un amigo imaginario",
+            "Vacio", "Empty", "1", "3", "69", "Enjoy", "RicardoGod", "987654321", "tu come confleis",
+            "Playa", "Celeste","Juan", "Alva majo", "kinnikuneko", "Konichiwa", "Kore wa nan desu ka?",
+            "Sensei", "Atarashii Gakko!", "Otonablue", "Rin", "Mizyu", "Kanon", "Suzuka", "..."} ;
 
     @FXML
     private Label LabelTitulo;
@@ -305,7 +317,7 @@ public class UiControler {
      * Metodo que genera la palabra nueva aleatoria
      */
     private void palabra() {
-        int min = 0, max = 28;
+        int min = 0, max = 55;
         int numeroAleatorio = (int) (Math.random() * (max - min + 1) + min); // Entre 0 y 28
         LabelFrase.setText(n1[numeroAleatorio]);
         textFieldEntrada.setText("");
